@@ -10,8 +10,6 @@ import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
-import java.io.PrintWriter;
 
 /**
  * Created by Somnus`L on 2017/1/12.
@@ -19,6 +17,7 @@ import java.io.PrintWriter;
 public final class AuthenticationInterceptor extends HandlerInterceptorAdapter
 {
     private final SessionUtil sessionUtil = new SessionUtil();
+    Object a = org.springframework.boot.ansi.AnsiOutput.Enabled.ALWAYS;
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception
