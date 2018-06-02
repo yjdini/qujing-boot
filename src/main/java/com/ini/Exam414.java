@@ -12,9 +12,9 @@ public class Exam414 {
         HashMap<String, Integer> countMap = new HashMap<String, Integer>();
         for(char c : chars){
             if(countMap.containsKey(c)){
-                countMap.put(c+"", countMap.get(c)+1);
+                countMap.put(c + "", countMap.get(c) + 1);
             }else{
-                countMap.put(c+"", 1);
+                countMap.put(c + "", 1);
             }
         }
         Integer const1 = new Integer(1);

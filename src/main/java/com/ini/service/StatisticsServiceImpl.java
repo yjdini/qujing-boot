@@ -61,6 +61,7 @@ public class StatisticsServiceImpl implements StatisticsService {
         if(timer != null){
             timer.cancel();
         }
+
         timer = new Timer();
         timer.schedule(new TimerTask() {
             @Override

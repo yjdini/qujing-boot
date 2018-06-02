@@ -23,9 +23,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 
 import javax.sql.DataSource;
 
-/**
- * Created by Somnus`L on 2017/4/11.
- */
 @Configuration
 @SpringBootApplication
 @ServletComponentScan("com.ini.framework")

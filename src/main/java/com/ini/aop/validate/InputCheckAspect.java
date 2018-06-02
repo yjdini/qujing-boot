@@ -18,7 +18,7 @@ import java.util.Map;
 @Component
 public class InputCheckAspect {
     @Around("execution(* com.ini.controllers.*.*(..)) " +
-            "and @annotation(com.ini.aop.validate.UserInputCriteria)")
+            "&& @annotation(com.ini.aop.validate.UserInputCriteria)")
     public Object process(ProceedingJoinPoint point) throws Throwable {
         Object[] args = point.getArgs();
         MethodSignature signature = (MethodSignature) point.getSignature();

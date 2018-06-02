@@ -47,7 +47,6 @@ public class Map2Bean {
             e.printStackTrace();
         }
         return bean;
-
     }
 
     public static <T> T convert(Map<String, Object> map, T bean) {
